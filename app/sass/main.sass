@@ -1,0 +1,267 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+    height: 100px
+    padding: 30px 0px 0px 0px
+    border-bottom: 1px solid #dce6e9
+    
+span.logo-title
+        display: inline-block;
+        position: relative;
+        top: -21px;
+        left: 5px;
+.adress
+    text-align: right;
+    line-height: 1.3em
+
+.adress-cabinet
+    font-size: 15px
+    margin-bottom: 10px
+    margin-top: -15px
+
+.adress-tel
+    font-size: 17px
+    font-weight: bold
+.adress-write
+    font-size: 13px
+    span
+        border-bottom: dashed 1px #000
+        &:hover
+            border-bottom: none
+        a
+            color:#000
+            text-decoration: none
+
+.slide-1
+    height: 560px
+    background-image: url(../img/slide-1-bg.jpg)
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: cover
+
+
+
+.slide-title
+    font-size: 48px
+    margin-top: 150px
+    font-weight: bold
+    
+.slide-description
+    font-size: 15px
+    line-height: 1.2em
+    
+.slide-button
+    margin-top: 35px
+    a
+        padding: 10px 25px
+        background-color: #304f55
+        color: #fff
+        text-decoration: none
+        border-radius: 3px
+        &:hover
+            opacity:.8
+.series-box
+    border: 1px solid #e8e8e8
+    margin-top: 50px
+    margin-bottom: 50px
+    padding: 40px 20px 0px
+    min-height: 170px
+.series-box-text
+    float: left
+    width: 75%
+.series-box-img
+    img
+            margin-top: -115px
+            position: absolute
+.series-box-text-description
+    font-size: 15px
+    margin-top: -50px
+    line-height: 1.4em
+    
+.series-box-text-title
+    position: relative
+    top: -63px
+    font-size: 24px
+    background-color: #fff
+    margin-left: 1
+    padding-left: 10px
+    left: -10px
+    width: 89%
+
+.series-box-text-link
+    font-size: 15px
+    margin-top: 20px
+    a
+        color: #556060
+        text-decoration: none
+                
+.series-box-img-2
+    img
+            margin-top: -126px
+            position: absolute
+.slick-dotted.slick-slider
+    margin-bottom: 0
+.slick-dots
+    bottom: 25px
+.slick-dots li button:before
+    content: url(../img/dot.png)
+.adress
+    img
+        position: relative
+        top: -2px
+        right: 5px
+.adress-cabinet
+    a
+        color: #000
+        text-decoration: none
+        
+@media only screen and (max-width : 1280px)
+    .series-box-text-title
+        font-size: 22px
+
+@media only screen and (max-width : 1202px)
+    header
+        text-align: center
+        height: 200px
+    .adress
+        text-align: center
+        margin-top: 35px
+    .series-box
+        max-width: 670px
+        margin: 35px auto
+    .series-box-second
+        margin-top: 100px
+@media only screen and (max-width : 517px)
+    span.logo-title
+        position: static
+    header
+        height: 240px
+    .slide-title
+        font-size: 36px
+    .series-box-text-title
+        font-size: 20px
+
+
+        
+nav
+  width: 100%
+  
+  ul li
+    display: inline-block
+    position: relative
+  a
+    color: #000
+    display: block
+    text-decoration: none
+    padding: 15px 30px
+    text-transform: uppercase
+    &:hover, &:active, &:focus
+        background-color: #66b24d
+        color: #fff
+        text-decoration: none
+        
+
+.menu-trigger
+  display: none
+  color: #000
+  text-decoration: none
+  text-align: center
+nav
+    ul
+        margin: 0px
+        padding: 0px
+
+.main-menu
+    position: relative
+.sub-menu
+    position: absolute
+    
+ul.sub-menu
+    width: 280px
+    background-color: #fff
+    li
+        display: block
+ul.sub-menu a:hover
+    background-color: #ddd
+    color: #000
+.sub-menu a
+    text-transform: none
+           
+
+.sub-menu-hover:hover .sub-menu
+    z-index: 3
+        
+@media screen and (max-width: 1280px)
+  .menu-trigger
+    display: block
+  nav ul
+    li
+      display: block
+      border-top: 1px #79896D solid
+  nav
+    ul
+        text-align: center
+        display: none
+    
+  ul.sub-menu
+    position: static
+    width: 100%
+    margin:auto
+
+@media only screen and (max-width : 490px)
+    .series-box
+        height: 225px
+    
+    .series-box-img 
+        img
+            margin-top: -60px;
+
+    .series-box-img-2
+        img
+            margin-top: -70px;
+    .slide-title
+        font-size: 32px
+            
