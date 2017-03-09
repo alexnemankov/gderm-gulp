@@ -1,7 +1,5 @@
-<h1>Sourcs files</h1>
+<h1>Test project for Borovoy Studio</h1>
 
 <p>
-	Test project for Borovoy Studio
+	HTML5, CSS3, jQuery, SASS, gulp, git
 </p>
-
-

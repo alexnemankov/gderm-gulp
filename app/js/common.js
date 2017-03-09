@@ -2,8 +2,8 @@ $(function() {
 
 	// Custom JS
 $('.single-item').slick({
-//    autoplay: true,
-//  autoplaySpeed: 7500,
+    autoplay: true,
+  autoplaySpeed: 7500,
 dots: true,
 });
     
